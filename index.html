@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<h1>The West Family</h1>
+		<script language="javascript">
+			var score=0;
+			prompt("Welcome to my quiz!")
+			function chk1(ans1, ans){
+				if(ans1==="Kanye") {
+					score++
+					alert("Correct! Your score is now " + score);
+				}
+				else {
+					score--
+					alert("Wrong! Your score is now " + score);
+				}
+				
+				if(ans1==="Kim") {
+					score++
+					alert("Correct! Your score is now " + score);
+				}
+				else {
+					score--
+					alert("Wrong! Your score is now " + score);
+			    }
+			}
+			
+			function check(ques, ans) {
+			
+				if(ques===ans) {
+					score++
+					alert("Correct! Your score is now " + score);
+				}
+				else {
+					score--
+					alert("Wrong! Your score is now " + score);
+			    }
+			
+			}
+		</script>
+	</head>
+	<body>
+		<ol>
+			<form>
+				<li>Who's Norths dad?</li>
+				<input name="ans1" type="text">
+				<input name="but1" type="button" value="Submit" onclick="check(form.ans1.value, 'Kanye')">
+
+				<li>Who's married to Kanye?</li>
+			    <input name="ans2" type="text">
+				<input name="but1" type="button" value="Submit" onclick="check(form.ans2.value, 'Kim')">
+				
+				<li>What's Kim son's name?</li>
+			    <input name="ans3" type="text">
+				<input name="but1" type="button" value="Submit" onclick="check(form.ans3.value, 'Saint')">
+			
+			
+			    <li>What's Kim age?</li>
+			    <input name="ans4" type="text">
+				<input name="but1" type="button" value="Submit" onclick="check(form.ans4.value, '36')">
+			
+			
+			     <li>What's Kanye's last name?</li>
+			    <input name="ans5" type="text">
+				<input name="but1" type="button" value="Submit" onclick="check(form.ans5.value, 'West')"></form> <br>
+			
+			 	<input name="but55" type="button" value="Video" onclick="window.open('https://www.youtube.com/user/KanyeWestVEVO')">
+			</form>
+		</ol>		
+		
+	</body>
+</html>
